@@ -7,3 +7,7 @@ MongoDB 4.0.0
 
 Installing MongoDB (Ubuntu) -
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+Local setup -
+pip install Flask
+pip install pymongo
