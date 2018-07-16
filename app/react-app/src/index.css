@@ -3,3 +3,8 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.ui-inputtext {
+  height: 24px;
+  width: 100%;
+}

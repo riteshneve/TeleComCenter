@@ -1,38 +1,88 @@
 .App {
 }
 
-.App-header {
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-.header {
-  grid-area: header;
-  background-color: #222;
-  padding: 5px;
-  color: white;
-}
-
-.main { grid-area: main; }
-.right { grid-area: right; }
-.footer {
-  grid-area: footer;
-  height: 20px;
-}
-
 .grid-container {
   display: grid;
   grid-template-areas:
       'header header header header'
       'main main right right'
       'footer footer footer footer';
-  grid-template-rows: 60px auto 30px;
+  grid-template-rows: min-content auto min-content;
   width: 100vw;
   height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #222;
+  padding: 10px;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.headerText {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.main {
+  grid-area: main;
+  padding: 5px;
+}
+.middlecontainer {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  height: 100%;
+  text-align: center;
+}
+.panelheader {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px 5px 0px 0px;
+  font-weight: bold;
+}
+.formcontainer {
+  padding-top: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.inputgroup {
+  display: grid;
+  grid-template-areas:
+      'formlabel forminput';
+  grid-template-cols: auto auto;
+  padding: 3px;
+}
+.formlabel {
+  grid-area: formlabel;
+  text-align: right;
+  background-color: green;
+  padding: 4px;
+  color: white;
+  font-size: 16px;
+}
+.forminput {
+  grid-area: forminput;
+  text-align: left;
+}
+
+.right {
+  grid-area: right;
+  padding: 5px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: grey;
+  padding: 3px;
+}
+.footercontainer {
+  min-height: 15px;
+  background-color: inherit;
+  font-size: 12px;
+  color: white;
 }
