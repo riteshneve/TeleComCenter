@@ -58,16 +58,26 @@
   padding: 3px;
 }
 .formlabel {
-  grid-area: formlabel;
   text-align: right;
   background-color: green;
-  padding: 4px;
   color: white;
-  font-size: 16px;
+  font-size: 18px;
 }
 .forminput {
-  grid-area: forminput;
   text-align: left;
+  padding: 0px;
+}
+
+.form-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 30px;
+}
+.form-grid-item {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 2px;
+  text-align: center;
 }
 
 .right {

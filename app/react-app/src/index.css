@@ -5,6 +5,10 @@ body {
 }
 
 .ui-inputtext {
-  height: 24px;
+  height: 30px;
   width: 100%;
+}
+
+.ui-tabview {
+  background-color: red;
 }
